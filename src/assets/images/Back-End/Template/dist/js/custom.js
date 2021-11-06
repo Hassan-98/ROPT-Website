@@ -1,0 +1,1 @@
+"use strict";firebase.initializeApp({apiKey:"AIzaSyD3-20AqP8ZgZLKvCmUvR7JLqfmXDswo2k",authDomain:"test-website-5d77c.firebaseapp.com",databaseURL:"https://test-website-5d77c.firebaseio.com",projectId:"test-website-5d77c",storageBucket:"",messagingSenderId:"782822263164",appId:"1:782822263164:web:c34b95dda8f9354a"});

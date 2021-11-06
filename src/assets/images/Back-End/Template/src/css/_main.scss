@@ -1,0 +1,7 @@
+// Main Styles :  Navbar | Header | Footer | Fonts
+
+@include addFont(default_font, "eng-default-font.otf");
+
+*{
+    font-family: default_font;
+}

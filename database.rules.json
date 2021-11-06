@@ -1,0 +1,43 @@
+{
+   "rules": {
+      "news": {
+         ".read": true,
+         ".write": "root.child('users').child(auth.uid).child('admin').val() === true",
+         ".indexOn": ["perority"]
+      },
+      "market": {
+         ".read": true,
+         ".write": "root.child('users').child(auth.uid).child('admin').val() === true",
+         "lastTransfers": {
+         ".indexOn": ["perority"]
+         }
+      },
+      "Seasons": {
+         ".read": true,
+         ".write": "root.child('users').child(auth.uid).child('admin').val() === true",
+         ".indexOn": ["num"]
+      },
+      "playersData": {
+         ".read": true,
+         ".write": "root.child('users').child(auth.uid).child('admin').val() === true"
+      },
+      "rankings": {
+         ".read": true,
+         ".write": "root.child('users').child(auth.uid).child('admin').val() === true"
+      },
+      "clubNames": {
+         ".read": true,
+         ".write": "root.child('users').child(auth.uid).child('admin').val() === true"
+      },
+      "messages": {
+         ".read": true,
+         ".write": true
+      },
+      "users": {
+         "$uid": {
+           ".read": true,
+           ".write": "root.child('users').child(auth.uid).child('admin').val() === true || $uid === auth.uid"
+         }
+      }
+   }
+}
